@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKEM MANAGER</title>
+    <!--- This is the style of instance myh1 id. This style tag should
+    be placed in the header tag by convention-->
+    <style>
+        #myh1 { 
+            font-size: x-large; text-align: center;
+            color:brown;
+        }
+        #myh1 { 
+            font-size: x-large; text-align: center;
+            color: darkgreen;
+        }
+        #registration { 
+           background-color:rgb(156, 160, 95);
+                
+       }
+
+       #logon{
+           background-color: chartreuse;
+       }    
+    </style>
+</head>
+ 
+<body>
+    <!-- This is the heading tag.-->
+    <h1 id="myh1">BOOKEM MANAGER SYSTEM</h1>
+    <form action="action_page.php">
+        <div class="container" id="registration">
+        <h2>Register</h2>
+        <p>If you do not have an account, please fill out the fields below.</p>
+        
+    
+        <label for="FullName"><b>Full Name</b></label>
+        <input type="text" placeholder="Enter your Full Name" name="FullName" required><br><br>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required><br><br>
+    
+        <label for="Mgrid"><b>Manager ID</b></label>
+        <input type="text" placeholder="Enter ID" name="Mgrid" required><br><br>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required><br><br>
+    
+        <label for="password-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="password-repeat" required><br><br>
+        <!--<input type="submit" value="Register"><br><br> -->
+        <button onclick="myFunction()">Register</button>
+        <script>
+            function myFunction() {
+            alert("Account created");
+            }
+            </script>
+    </div>
+    <p>Already have an account?</p> 
+    </form>
+    <form target="_blank" action="bookem-mgr1.html">
+        <div class="container" id="logon">
+            <label for="Mgrid"><b>Manager ID</b></label>
+            <input type="text" placeholder="Enter ID" name="Mgrid" required><br><br>      
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required><br><br>
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required><br><br>
+            <input type="submit" value="Login"><br><br>    
+        </div>        
+       
+    </form>
+
+</body>
+</html>
