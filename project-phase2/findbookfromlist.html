@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE FINDER</title>
+    <style>
+        /* styling for the rows */
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100px
+        }
+
+        /* styling for the columns */
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+            border: 1px solid black;
+        }
+
+        .controls {
+            margin: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        span {
+            padding-top: 40px;
+            height: 100%;
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        /* highlight for a span*/
+        .spanHighlighted {
+            border: 5px solid rgb(61, 0, 0);
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: lightyellow
+        }
+    </style>
+    <script src="./scripts.js" defer></script>
+</head>
+
+<body>
+    <h1 style="text-align: center">SPECIAL BOOK FIND</h1>
+    </p>Find the book in the list and highlight it.</p>
+    <div id="controls" class="controls">
+        <label for="tbTextToFind" id="label1" class="cLabel"></label>
+        <input type="text" id="tbTextToFind" placeholder="Enter text to find" />
+        <button id="btnFindIt" onclick="findInList();">Find It</button>
+        <button id="Reset" onclick="resetFindInList();">Reset</button>
+    </div>
+
+    <div id="original">
+        <div id="row0" class="row">
+            <div class="column center blue">
+                <span id="IBSN-1">MYSTICKS</span>
+            </div>
+            <div class="column center red">
+                <span id="IBSN-2">MALCOM VEX</span>
+            </div>
+            <div class="column center yellow">
+                <span id="IBSN-3">GOOD READMES</span>
+            </div>
+            <div class="column center red">
+                <span id="IBSM-4">WOO AND WONT</span>
+            </div>
+            <div class="column center yellow">
+                <span id="IBSN-5">COSMIC LENS</span>
+            </div>
+            <div class="column center blue">
+                <span id="IBSN-6">MERCEDES FRIEND</span>
+            </div>
+            <div class="column center yellow">
+                <span id="IBSN-7">PRO-GRAMS</span>
+            </div>
+            <div class="column center red">
+                <span id="IBSN-8">JAVA STRIP</span>
+            </div>
+            <div class="column center blue">
+                <span id="IBSN-9">GEM CLONE</span>
+            </div>
+        </div>
+    </div>
+    <div id="results">
+    </div>
+</body>
+
+</html>
