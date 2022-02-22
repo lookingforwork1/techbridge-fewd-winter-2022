@@ -18,3 +18,6 @@ Sortbookfromlist.html
 
 BOOK LIST SOLUTION
 * Brief powerpoint presentation about the above html files
+
+Scripts.js
+* Javascript file that houses the FindInGrid, FindinList and SortItems functions
